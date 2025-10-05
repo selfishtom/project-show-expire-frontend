@@ -128,7 +128,7 @@ export const Search: React.FC = () => {
                   userInfo.enable === true ? "text-success" : "text-error"
                 }`}
               >
-                {t(userInfo.status)}
+                {t(userInfo.enable === true ? "active" : "expired")}
               </span>
             </div>
             {userInfo.enable === true && userInfo.timeUntilEnd && (
